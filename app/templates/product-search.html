@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', path='css/product-search.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/header.css')}}">
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <header class="header">
+        {% include 'layouts/header.html' %} 
+    </header>
+
+    <main>
+        <section class="search-section">
+            {% include 'layouts/search-bar.html' %} 
+        </section>
+
+        <section class="results">
+            <div class="result-card">
+            <div class="result-image"><img style="max-height: 100%;" src="https://media.falabella.com/falabellaCO/73396162_2/w=1500,h=1500,fit=pad" alt=""></div>
+
+            <div class="result-info">
+                <h3><a href="/product">Galaxy S25 Ultra 5G</a></h3>
+                <p class="brand">Samsung</p>
+                <p class="description">Celular Samsung Galaxy S25 Ultra 5G</p>
+            </div>
+
+            <div class="favorite">
+                ❤️
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-image"></div>
+
+            <div class="result-info">
+                <h3>Galaxy S25+ 5G</h3>
+                <p class="brand">Samsung</p>
+                <p class="description">Celular Samsung Galaxy S25+ 5G</p>
+            </div>
+
+            <div class="favorite">
+                ❤️
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-image"></div>
+
+            <div class="result-info">
+                <h3>Galaxy S25 5G</h3>
+                <p class="brand">Samsung</p>
+                <p class="description">Celular Samgung Galaxy S25 5G</p>
+            </div>
+
+            <div class="favorite">
+                ❤️
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-image"></div>
+
+            <div class="result-info">
+                <h3>Galaxy S25 FE</h3>
+                <p class="brand">Samgung</p>
+                <p class="description">Celular Samgung Galaxy S25 FE</p>
+            </div>
+
+            <div class="favorite">
+                ❤️
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-image"></div>
+
+            <div class="result-info">
+                <h3>Galaxy S24 FE</h3>
+                <p class="brand">Samsung</p>
+                <p class="description">Celular Samsung Galaxy S24 FE</p>
+            </div>
+
+            <div class="favorite">
+                ❤️
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

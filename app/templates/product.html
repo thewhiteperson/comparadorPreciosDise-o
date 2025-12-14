@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="{{url_for('static', path='css/product.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/header.css')}}">
+</head>
+<body>
+    <header class="header">
+        {% include 'layouts/header.html' %} 
+    </header>
+
+    <!-- PRODUCT DETAIL -->
+    <main class="product-detail">
+
+        <!-- LEFT: PRODUCT INFO -->
+        <section class="product-info">
+            <div class="product-top">
+                <div class="product-image" ><img style="max-height: 100%;" src="https://media.falabella.com/falabellaCO/73396162_2/w=1500,h=1500,fit=pad" alt=""></div>
+                <div class="product-main-info">
+                    <h2>Galaxy S25 Ultra 5G</h2>
+                    <p class="brand">Samsung</p>
+                </div>
+                <div class="favorite-detail">❤️</div>
+            </div>
+
+            <div class="product-description">
+                <h4>Celular Samsung Galaxy S25 ULTRA</h4>
+                <p>
+                    El Samsung Galaxy S25 Ultra es la última incorporación a la serie Galaxy S, diseñado para quienes buscan el máximo rendimiento, calidad fotográfica profesional y una experiencia premium en todos los aspectos.
+                </p>
+            </div>
+        </section>
+
+        <!-- RIGHT: STORES -->
+        <section class="store-list">
+
+            <div class="store-card">
+                <div class="store-header">
+                    <h4>Samsung</h4>
+                    <span class="shipping free">Envío Gratis</span>
+                </div>
+
+                <p class="price">$ 6.999.900</p>
+                <p class="status available">Disponible</p>
+
+                <a href="https://www.samsung.com/co/smartphones/galaxy-s25-ultra/buy/?modelCode=SM-S938BZBKLTC" target="_blank" class="btn-go">Llévame allí</a>
+
+                <p class="updated">Precio actualizado el día 13/12/2025</p>
+            </div>
+
+            <div class="store-card">
+                <div class="store-header">
+                    <h4>Falabella</h4>
+                    <span class="shipping none">Sin datos de envío</span>
+                </div>
+
+                <p class="price">$ 7.209.900</p>
+                <p class="status available">Disponible</p>
+
+                <a class="btn-go" href="https://www.falabella.com.co/falabella-co/product/73396163/Celular-Galaxy-S25-Ultra-5G-256GB-12GB-RAM-/73396162" target="_blank" >Llévame allí</a>
+
+                <p class="updated">Precio actualizado el día 13/12/2025</p>
+            </div>
+
+            <div class="store-card">
+                <div class="store-header">
+                    <h4>MercadoLibre</h4>
+                    <span class="shipping free">Envío Gratis</span>
+                </div>
+
+                <p class="price">$ 3.999.900</p>
+                <p class="status available">Disponible</p>
+
+                <a class="btn-go" href="https://www.mercadolibre.com.co/samsung-galaxy-s25-ultra-256gb-titanium-silverblue/p/MCO45502333?pdp_filters=item_id:MCO2862565070#is_advertising=true&searchVariation=MCO45502333&backend_model=search-backend&position=1&search_layout=stack&type=pad&tracking_id=07d14503-3b0f-43ca-b71d-3a7e6326a6ec&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=YTBkYzZjY2YtYmZkNC00OGU3LWFhNWYtZDY1MDQxZDM4MWEz" target="_blank" >Llévame allí</a>
+
+                <p class="updated">Precio actualizado el día 13/12/2025</p>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
